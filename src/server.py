@@ -51,7 +51,7 @@ def generate_anomaly_data():
             "dst_port": random.randint(1024, 65535),
             "packet_size": random.randint(100, 1500),
             "duration_ms": random.randint(50, 500),
-            "protocol": "UNKNOWN"
+            "protocol": random.choice(["TCP", "UDP"])
         }
 
 def get_data():
